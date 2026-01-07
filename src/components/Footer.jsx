@@ -18,6 +18,7 @@ export default function Footer({ darkMode }) {
         <p className="mb-2">
           this is currently a placeholder, idk what ill use the footer for
         </p>
+        <p><i>welcome to my footer, select my three page links to go somewhere else yeah</i></p>
 
         <div className="d-flex justify-content-center gap-3">
           <Link className="text-decoration-none" to="/">

@@ -3,6 +3,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import demoVideo from "../assets/videos/bombstrapped.mp4";
 import robinGif from "../assets/images/robin.gif"; 
 
+const games = [
+  "Roblox of course",
+  "Minecraft that should also naturally come with",
+  "Star Rail someone save me i hate this game",
+  "ML",
+  "the project moon trio",
+  "monkey vs bloons tower defense",
+  "terraria please someone play this with me us",
+  "the horse training game with the autism factors",
+  "OSU YEAHH 🔥 i fell off hard though",
+  "visual novels mostly horror or mystery ones",
+  "those idol rhythm games i miss llsif",
+  "touhou fan games sometimes",
+  "stupid weird niche games i find on steam which i shouldnt even be playing or spending money on",
+  "BRO IS NOT BEATING THE COMSCI NERD ALLEGATIONS 😭😭"
+];
+
 export default function Accordion() {
   return (
     <div className="accordion my-3" id="accordionExample">
@@ -28,7 +45,8 @@ export default function Accordion() {
         >
           <div className="accordion-body border rounded p-3 bg-light">
             wassupp 😭
-            crying im so much confusions
+            crying im so much confusions<br />
+            i should just put my contacts here but i dont think i have much of that either 
           </div>
         </div>
       </div>
@@ -87,6 +105,35 @@ export default function Accordion() {
         </div>
       </div>
 
+      <div className="accordion-item">
+        <h2 className="accordion-header" id="headingFour">
+          <button
+            className="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="true"
+            aria-controls="collapseFour"
+          >
+            games yeay 
+          </button>
+        </h2>
+        <div
+          id="collapseFour"
+          className="accordion-collapse collapse"
+          aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample"
+        >
+          <div className="accordion-body border rounded p-3 bg-light">
+           {games.map((game, index) => (
+            <div key={index}>
+             <p>{game}</p>
+             {index !== games.length - 1 && <hr />} {/* skip last line */}
+            </div>
+          ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
