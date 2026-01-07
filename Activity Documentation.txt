@@ -1,0 +1,25 @@
+Hello, this is made so that I and possibly whoever is reading this can keep track of what I've done each Version i guess.
+
+Activity 1:
+Making the site, adding JUST THE HTML
+
+Activity 2:
+adding my spice and "personality" to the site + CSS time
+
+Activity 3:
+lots of bootstrap added, dedicated a whole page just for that while the original stays and will be worked on separately frm Bootstrap.
+
+Activity 4:
+Original page + CSS was the only thing touched, no plans to add it into bootstrap just yet
+JavaScript added into those two aforementioned pages
+
+Activity 5:
+Javascript to ES6, although project already has ES6 concepts- so nothing was changed
+
+Activit 6:
+Convert activity to ViteReact
+IM SO LOST IDK IF ITS BECAUSE IM ON MAC OR THERES OTHER ERRORS ILL JUST DO A BIT THEN CONTINUE AGAIN AFTERWARDs
+
+Activity 7:
+Router and use state, I think my code is getting way too jumbled haha cries
+im not even done doing activity 6 i have to fix this over the break
