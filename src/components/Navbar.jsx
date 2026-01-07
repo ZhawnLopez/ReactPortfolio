@@ -1,12 +1,26 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import catImg from "../assets/images/cat.png";
+
 
 export default function Navbar({ toggleDarkMode, darkMode }) {
   return (
-    <nav className={`navbar navbar-expand-lg ${darkMode ? "navbar-dark bg-dark" : "navbar-light bg-light"}`}>
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">Navbar</Link>
+    <nav
+      className={`navbar navbar-expand-lg ${
+        darkMode ? "navbar-dark bg-dark" : "navbar-light bg-light"
+      } fixed-top`}
+      style={{ height: "64px" }}   
+    >
+      <div className="container-fluid px-4">
+        <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
+         <img
+           src={catImg}
+           alt="Cat logo"
+           className="navbar-cat"
+          />
+         <span className="rainbow-text">Cat image gif fire emoji 🔥 idk</span>
+        </Link>
 
         <button
           className="navbar-toggler"
@@ -17,27 +31,40 @@ export default function Navbar({ toggleDarkMode, darkMode }) {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-           <li className="nav-item">
-             <Link className="nav-link" to="/">Home</Link>
-           </li>
-           <li className="nav-item">
-            <Link className="nav-link" to="/profile">Profile</Link>
-           </li>
-           <li className="nav-item">
-            <Link className="nav-link" to="/others">Others</Link>
-           </li>
-          </ul>
+          <ul className="navbar-nav ms-auto align-items-center gap-3">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/">
+                Home
+              </NavLink>
+            </li>
 
-          <div className="d-flex gap-2">
-            <button className={`btn ${darkMode ? "btn-light" : "btn-dark"}`} onClick={toggleDarkMode}>
-              {darkMode ? "Light Mode" : "Dark Mode"}
-            </button>
-          </div>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/profile">
+                Profile
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/others">
+                Others
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <button
+                className={`btn btn-sm ${
+                  darkMode ? "btn-light" : "btn-dark"
+                }`}
+                onClick={toggleDarkMode}
+              >
+                {darkMode ? "Light" : "Dark"}
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

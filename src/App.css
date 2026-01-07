@@ -51,3 +51,51 @@
   background-color: #1b1b1b !important;
   color: white !important;
 }
+
+html {
+  overflow-y: scroll;
+}
+
+.rainbow-text {
+  font-weight: 800;
+  font-size: 1.4rem;
+
+  background: linear-gradient(
+    270deg,
+    #ff0000,
+    #ff9900,
+    #ffee00,
+    #33cc33,
+    #00ccff,
+    #3333ff,
+    #cc33ff,
+    #ff0000
+  );
+
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation: rainbowShift 6s ease infinite;
+}
+
+@keyframes rainbowShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.navbar-cat {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0; /* prevents squishing */
+}
+

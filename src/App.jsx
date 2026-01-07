@@ -25,14 +25,16 @@ function App() {
     <>
       <Navbar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
 
-      <AnimatePresence mode="wait">
-       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<About darkMode={darkMode} />} />
-        <Route path="/profile" element={<Profile darkMode={darkMode} />} />
-        <Route path="/others" element={<Others darkMode={darkMode} />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-       </Routes>
-      </AnimatePresence>
+        <main style={{ paddingTop: "64px", minHeight: "100vh" }}>
+         <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+           <Route path="/" element={<About darkMode={darkMode} />} />
+           <Route path="/profile" element={<Profile darkMode={darkMode} />} />
+           <Route path="/others" element={<Others darkMode={darkMode} />} />
+           <Route path="*" element={<Navigate to="/" replace />} />
+           </Routes>
+         </AnimatePresence>
+        </main>
 
       <Footer darkMode={darkMode} />
     </>
