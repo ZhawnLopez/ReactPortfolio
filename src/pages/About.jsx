@@ -15,14 +15,14 @@ export default function About({ darkMode }) {
     "...dont ask the maker of the page questions to keep the entrance to agartha safe, like sub and hit the bell for more agartha content im crying why does he slur his speech";
   const typingSpeed = 100; // ms per character
 
-  // Track scroll
+  // track scroll
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Determine if Yakub section is in view
+  // check if yakub section is in view
   useEffect(() => {
     if (yakubRef.current) {
       const rect = yakubRef.current.getBoundingClientRect();
@@ -31,7 +31,7 @@ export default function About({ darkMode }) {
     }
   }, [scrollY]);
 
-  // Yakub typing effect
+  // yakub typing effect like dialogue lmaooo
   useEffect(() => {
     if (!yakubVisible) {
       setDisplayedText("");
@@ -51,7 +51,7 @@ export default function About({ darkMode }) {
     return () => clearInterval(interval);
   }, [yakubVisible]);
 
-  // Scroll thresholds for overlay (white → transparent)
+  // scroll thresholds for overlay (white > transparent)
   const fadeStart = 1800;
   const fadeEnd = 2200;
   const overlayOpacity =
@@ -66,7 +66,7 @@ export default function About({ darkMode }) {
       ? 1
       : Math.max(1 - (scrollY - fadeStart) / (fadeEnd - fadeStart), 0);
 
-  // Body background for About only
+  // body background for About only
   useEffect(() => {
     document.body.style.backgroundImage = `url(${agarthaImg})`;
     document.body.style.backgroundSize = "cover";
@@ -99,7 +99,7 @@ export default function About({ darkMode }) {
     zIndex: 0,
   };
 
-  // Navbar background slightly darker but visible
+  // navbar background slightly darker but visible
   const navbarBackground = darkMode
     ? "rgba(40, 40, 40, 0.95)"
     : "rgba(200, 200, 200, 0.95)";
@@ -109,7 +109,7 @@ export default function About({ darkMode }) {
       {/* overlay hiding agartha initially */}
       <div style={overlayStyle}></div>
 
-      {/* Main About Section */}
+      {/* About section */}
       <section
         className="py-5"
         style={{
@@ -149,7 +149,7 @@ export default function About({ darkMode }) {
         </div>
       </section>
 
-      {/* Yakub Section */}
+      {/* yakub Section */}
       <section
         ref={yakubRef}
         className="py-5"
@@ -163,7 +163,7 @@ export default function About({ darkMode }) {
           gap: "1rem",
         }}
       >
-        {/* Yakub dialogue text */}
+        {/* yakub dialogue text */}
         <div
           style={{
             maxWidth: "60%",
@@ -179,7 +179,7 @@ export default function About({ darkMode }) {
           {displayedText}
         </div>
 
-        {/* Yakub GIF with manual side cropping via overflow */}
+        {/* yakub GIF with manual side cropping via overflow */}
         <div
           style={{
             maxWidth: "35%",
@@ -203,7 +203,7 @@ export default function About({ darkMode }) {
         </div>
       </section>
 
-      {/* Navbar styling */}
+      {/* navbar styling */}
       <style>{`
         .navbar {
           background-color: ${navbarBackground} !important;
