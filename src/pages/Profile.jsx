@@ -57,7 +57,7 @@ export default function Profile({ darkMode }) {
     {
       title: "Projects",
       summary: "Personal or school projects.",
-      details: "I'm sorry, but idk what to actually put here",
+      details: "this thing is my project yes",
     },
   ];
 
