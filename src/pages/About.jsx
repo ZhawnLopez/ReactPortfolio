@@ -68,12 +68,12 @@ export default function About({ darkMode }) {
 
   // body background for About only
   useEffect(() => {
-    document.body.style.backgroundImage = `url(${agarthaImg})`;
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundPosition = "center";
     document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundColor = "white"; // start white
+    document.body.style.backgroundImage = `url(${agarthaImg})`;
     document.body.style.transition = "background 0.5s ease";
 
     return () => {

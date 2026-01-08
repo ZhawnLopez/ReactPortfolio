@@ -6,6 +6,19 @@ import cert2 from "../assets/images/cert2.png";
 import cert3 from "../assets/images/cert3.png";
 import cert4 from "../assets/images/cert4.png";
 import cert5 from "../assets/images/cert5.png";
+import cert6 from "../assets/images/cert6.png";
+import cert7 from "../assets/images/cert7.png";
+import cert8 from "../assets/images/cert8.png";
+import cert9 from "../assets/images/cert9.png";
+import cert10 from "../assets/images/cert10.png";
+import cert11 from "../assets/images/cert11.png";
+import cert12 from "../assets/images/cert12.png";
+import cert13 from "../assets/images/cert13.png";
+import cert14 from "../assets/images/cert14.png";
+import cert15 from "../assets/images/cert15.png";
+import cert16 from "../assets/images/cert16.png";
+import cert17 from "../assets/images/cert17.png";
+import cert18 from "../assets/images/cert18.png";
 import spongebob from "../assets/images/spongebob.jpeg";
 
 export default function Profile({ darkMode }) {
@@ -40,6 +53,71 @@ export default function Profile({ darkMode }) {
           img: cert5,
           title: "Programming Foundations: Databases",
           description: "database basics with programming.",
+        },
+                {
+          img: cert6,
+          title: "Advanced Algorithmic Thinking with Python",
+          description: "PYTHON ALGORITHIMS?? nah its not",
+        },
+        {
+          img: cert7,
+          title: "Computer Science Principles: Digital Information",
+          description: "basic com sci principles and concepts.",
+        },
+        {
+          img: cert8,
+          title: "Creating a Business Plan",
+          description: "business plan",
+        },
+        {
+          img: cert9,
+          title: "Entrepreneurship: Bootstrapping Your Business",
+          description: "meticulous planning basically",
+        },
+        {
+          img: cert10,
+          title: "Entrepreneurship Foundations",
+          description: "entrepeneurship basics and concepts",
+        },
+                {
+          img: cert11,
+          title: "Foundations of Algorithmic Thinking with Python",
+          description: "foundations of the advanced course asidasdas",
+        },
+        {
+          img: cert12,
+          title: "Fundamentals of Dynamic Programming",
+          description: "Dynamic Programming and algorithms",
+        },
+        {
+          img: cert13,
+          title: "React Essential Training",
+          description: "React Components and Coding for Web Development",
+        },
+        {
+          img: cert14,
+          title: "Running a Design Business: Creative Briefs",
+          description: "concepts and foundations on business designs",
+        },
+        {
+          img: cert15,
+          title: "Learning Arduino: Interfacing with Hardware",
+          description: "Arduino combined with hardware components.",
+        },
+                {
+          img: cert16,
+          title: "Running a Design Business: The Staffing Rule Book",
+          description: "Guide on staffing and managing business and design utilization",
+        },
+        {
+          img: cert17,
+          title: "Running a Design Business: Writing and Pricing Winning Proposals",
+          description: "Concepts and strategies to writing proper proposals",
+        },
+        {
+          img: cert18,
+          title: "Tailwind CSS 4 Essential Training",
+          description: "Tailwing and CSS essential concepts and guide on web development",
         },
       ],
     },
