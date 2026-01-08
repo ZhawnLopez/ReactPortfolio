@@ -71,7 +71,7 @@ export default function Accordion() {
           data-bs-parent="#accordionExample"
         >
           <div className="accordion-body">
-            <p>This is me 24/7 as a neat introduction:</p>
+            <p>this is me 24/7 as a neat introduction:</p>
             <img src={robinGif} alt="Robin GIF" style={{ maxWidth: "100%" }} />
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function Accordion() {
           data-bs-parent="#accordionExample"
         >
           <div className="accordion-body">
-            <p>Here is a short video demonstration, DO NOT REPLICATE:</p>
+            <p>here is a short video demonstration, pls DO NOT REPLICATE:</p>
             <video controls width="100%">
               <source src={demoVideo} type="video/mp4" />
             </video>
@@ -105,10 +105,10 @@ export default function Accordion() {
         </div>
       </div>
 
-      <div className="accordion-item">
+      <div className="accordion-item"> 
         <h2 className="accordion-header" id="headingFour">
           <button
-            className="accordion-button"
+            className="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapseFour"
