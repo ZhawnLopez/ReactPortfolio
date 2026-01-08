@@ -23,3 +23,16 @@ IM SO LOST IDK IF ITS BECAUSE IM ON MAC OR THERES OTHER ERRORS ILL JUST DO A BIT
 Activity 7:
 Router and use state, I think my code is getting way too jumbled haha cries
 im not even done doing activity 6 i have to fix this over the break
+
+Activity 8+above:
+hey i kinda forgot to do this but Added:
+Agartha + Yakub
+Scroll down bg changes
+Portfolio actually made
+Lots of images added like certificates and silly stuff lamsdasdaushd
+Github repo and production deployment
+Page transitions
+Cat rainbow and profile picture yippee
+Separated components into pages for clarity
+lots of fixes on issues like DARK MODE BUGGING AND YAKUB 
+speaking of yakub i cant fix his dialogue
