@@ -3,19 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-
   "homepage": "https://zhawnlopez.github.io/ReactPortfolio",
-
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-
   "dependencies": {
     "bootstrap": "^5.3.8",
     "framer-motion": "^12.23.26",
@@ -23,7 +19,6 @@
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.11.0"
   },
-
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@types/react": "^19.2.5",
