@@ -19,7 +19,7 @@ export default function Navbar({ toggleDarkMode, darkMode }) {
            alt="Cat logo"
            className="navbar-cat"
           />
-         <span className="rainbow-text">Cat image gif fire emoji 🔥 idk</span>
+         <span className="rainbow-text">Cat image gif fire emoji 🔥</span>
         </Link>
 
         <button

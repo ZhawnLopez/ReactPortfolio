@@ -16,7 +16,7 @@ export default function Footer({ darkMode }) {
     >
       <div className="container text-center">
         <p className="mb-2">
-          this is currently a placeholder, idk what ill use the footer for
+          this is currently a placeholder, my linkedin and github arent even accessible sob
         </p>
         <p><i>welcome to my footer, select my three page links to go somewhere else yeah</i></p>
 
